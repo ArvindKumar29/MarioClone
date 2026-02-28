@@ -1,0 +1,94 @@
+# Loading Assets for game file...
+//TEXTURES
+// PlayerTextures
+Texture PlayerIdle Assets\Sprites\Characters\Default\PlayerIdle.png
+Texture PlayerJump Assets\Sprites\Characters\Default\PlayerJump.png
+Texture PlayerRun1 Assets\Sprites\Characters\Default\PlayerRun1.png
+Texture PlayerRun2 Assets\Sprites\Characters\Default\PlayerRun2.png
+Texture PlayerCrouch Assets\Sprites\Characters\Default\PlayerCrouch.png
+
+// TilesAndEnvironmentTextures
+Texture BlockBlue Assets\Sprites\Tiles\Default\block_blue.png
+Texture BlockGreen  Assets\Sprites\Tiles\Default\block_green.png
+Texture BlockRed  Assets\Sprites\Tiles\Default\block_red.png
+Texture LandTopLeft  Assets\Sprites\Tiles\Default\terrain_grass_block_top_left.png
+Texture LandTopRight  Assets\Sprites\Tiles\Default\terrain_grass_block_top_right.png
+Texture LandTop  Assets\Sprites\Tiles\Default\terrain_grass_block_top.png
+Texture LandLeft  Assets\Sprites\Tiles\Default\terrain_grass_block_left.png
+Texture LandRight  Assets\Sprites\Tiles\Default\terrain_grass_block_right.png
+Texture LandCentre  Assets\Sprites\Tiles\Default\terrain_grass_block_center.png
+Texture GrassLongRamp Assets\Sprites\Tiles\Default\terrain_grass_ramp_long_b.png
+Texture LandLongRamp Assets\Sprites\Tiles\Default\terrain_grass_ramp_long_a.png
+
+Texture LadderBottom Assets\Sprites\Tiles\Default\ladder_bottom.png
+Texture LadderMiddle Assets\Sprites\Tiles\Default\ladder_middle.png
+Texture LadderTop Assets\Sprites\Tiles\Default\ladder_top.png
+Texture GrassCloud Assets\Sprites\Tiles\Default\terrain_grass_cloud.png
+Texture BackgroundClouds Assets\Sprites\Backgrounds\Default\background_clouds.png
+Texture BackgroundDesert Assets\Sprites\Backgrounds\Default\background_color_desert.png
+Texture BackgroundHills Assets\Sprites\Backgrounds\Default\background_color_hills.png
+Texture BackgroundMushrooms Assets\Sprites\Backgrounds\Default\background_color_mushrooms.png
+Texture BackgroundTrees Assets\Sprites\Backgrounds\Default\background_color_trees.png
+Texture BackgroundDesertFade Assets\Sprites\Backgrounds\Default\background_fade_desert.png
+Texture BackgroundHillsFade Assets\Sprites\Backgrounds\Default\background_fade_hills.png
+Texture BackgroundMushroomsFade Assets\Sprites\Backgrounds\Default\background_fade_mushrooms.png
+Texture BackgroundTreesFade Assets\Sprites\Backgrounds\Default\background_fade_trees.png
+Texture BackgroundCloudsSolid Assets\Sprites\Backgrounds\Default\background_solid_cloud.png
+Texture BackgroundDirtSolid Assets\Sprites\Backgrounds\Default\background_solid_dirt.png
+Texture BackgroundSkySolid Assets\Sprites\Backgrounds\Default\background_solid_sky.png
+Texture BackgroundGrassSolid Assets\Sprites\Backgrounds\Default\background_solid_grass.png
+Texture BackgroundSandSolid Assets\Sprites\Backgrounds\Default\background_solid_sand.png
+
+
+// EnemiesTextures
+Texture EnemyFrogIdle Assets\Sprites\Enemies\Default\frog_idle.png
+Texture EnemyFrogRun Assets\Sprites\Enemies\Default\frog_jump.png
+Texture BarnAcleIdle1 Assets\Sprites\Enemies\Default\barnacle_attack_a.png
+Texture BarnAcleIdle2 Assets\Sprites\Enemies\Default\barnacle_attack_b.png
+Texture BeeIdle1 Assets\Sprites\Enemies\Default\bee_a.png
+Texture BeeIdle2 Assets\Sprites\Enemies\Default\bee_b.png
+Texture BlockIdle Assets\Sprites\Enemies\Default\block_idle.png
+Texture BlockRest Assets\Sprites\Enemies\Default\block_rest.png
+Texture FishBlueSwimA Assets\Sprites\Enemies\Default\fish_blue_swim_a.png
+Texture FishBlueSwimB Assets\Sprites\Enemies\Default\fish_blue_swim_b.png
+Texture FishYellowSwimA Assets\Sprites\Enemies\Default\fish_yellow_swim_a.png
+Texture FishYellowSwimB Assets\Sprites\Enemies\Default\fish_yellow_swim_b.png
+Texture FlyA Assets\Sprites\Enemies\Default\fly_a.png
+Texture FlyB Assets\Sprites\Enemies\Default\fly_b.png
+Texture LadyBugA Assets\Sprites\Enemies\Default\ladybug_walk_a.png
+Texture LadyBugB Assets\Sprites\Enemies\Default\ladybug_walk_b.png
+Texture MouseA Assets\Sprites\Enemies\Default\mouse_walk_a.png
+Texture MouseB Assets\Sprites\Enemies\Default\mouse_walk_b.png
+Texture SlimeA Assets\Sprites\Enemies\Default\slime_block_walk_a.png
+Texture SlimeB Assets\Sprites\Enemies\Default\slime_block_walk_b.png
+Texture SlimeFireA Assets\Sprites\Enemies\Default\slime_fire_walk_a.png
+Texture SlimeFireB Assets\Sprites\Enemies\Default\slime_fire_walk_b.png
+Texture WormA Assets\Sprites\Enemies\Default\worm_normal_move_a.png
+Texture WormB Assets\Sprites\Enemies\Default\worm_normal_move_b.png
+Texture WormRingA Assets\Sprites\Enemies\Default\worm_ring_move_a.png
+Texture WormRingB Assets\Sprites\Enemies\Default\worm_ring_move_b.png
+
+//FONT
+Font UIFont  ROGFontsSTRIXSCARRegular.ttf
+
+//ANIMATIONS
+Animation PlayerRun 2 PlayerRun1 PlayerRun2 10 1
+Animation PlayerIdle 1 PlayerIdle 1 1
+Animation PlayerJump 1 PlayerJump 1 1
+Animation FrogRun 2 EnemyFrogIdle EnemyFrogRun 10 1
+Animation BarnAcleAttack 2 BarnAcleIdle1 BarnAcleIdle2 10 1
+Animation BeeIdle 2 BeeIdle1 BeeIdle2 10 1
+Animation BlockIdle 2 BlockIdle BloackRest 10 1
+Animation FishBlueSwim 2 FishBlueSwimA FishBlueSwimB 10 1
+Animation FishYellowSwim 2 FishYellowSwimA FishYellowSwimB 10 1
+Animation FlyIdle 2 FlyA FlyB 10 1
+Animation LadyBugWalk 2 LadyBugA LadyBugB 10 1
+Animation MouseWalk 2 MouseA MouseB 10 1
+Animation SlimeWalk 2 SlimeA SlimeB 10 1
+Animation SlimeFireWalk 2 SlimeFireA SlimeFireB 10 1
+Animation WormMove 2 WormA WormB 10 1
+Animation WormRingMove 2 WormRingA WormRingB 10 1
+
+
+
+//SOUND
