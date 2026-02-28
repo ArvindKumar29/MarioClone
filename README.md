@@ -21,7 +21,12 @@ Instead of using modern drag-and-drop engines, this project focuses on raw mathe
 3. Include the source (`.cpp`) and header (`.h`) files into your project.
 4. Build and compile the project in your environment to test the physics engine!
 
-## 📸 Gameplay Debug View
+## 📸 Gameplay Debug View and Gameplay Demo
 <img width="1913" height="1080" alt="image" src="https://github.com/user-attachments/assets/64b60411-9b11-4165-b56e-4be4144c74d8" />
 A screenshot of the debug features including collision boxes and grid view...
+
+
+https://github.com/user-attachments/assets/e3fa7fe0-d861-4f47-aa84-532455383a13
+A demo video of the gamplay from the playtesting. This video is also available in source files...
+
 
