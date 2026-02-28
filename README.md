@@ -22,4 +22,6 @@ Instead of using modern drag-and-drop engines, this project focuses on raw mathe
 4. Build and compile the project in your environment to test the physics engine!
 
 ## 📸 Gameplay Debug View
-*(Upload a screenshot here showing your Mario on the screen, preferably with bounding boxes visible if you have a debug mode!)*
+<img width="1913" height="1080" alt="image" src="https://github.com/user-attachments/assets/64b60411-9b11-4165-b56e-4be4144c74d8" />
+A screenshot of the debug features including collision boxes and grid view...
+
