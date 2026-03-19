@@ -1,0 +1,7 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="SuperMarioClone/SuperMarioClone.vcxproj" Id="00635d0d-7db9-40a9-90c4-006d9613c97b" />
+</Solution>
