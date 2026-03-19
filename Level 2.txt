@@ -1,0 +1,122 @@
+Window 100 20
+
+End Exit 90 2
+
+Player PlayerIdle 2 6
+
+Tile LandTopLeft 0 4
+Tile LandTop 1 4
+Tile LandTop 2 4
+Tile LandTop 3 4
+Tile LandTop 4 4
+Tile LandTop 5 4
+Tile LandTop 6 4
+Tile LandTop 7 4
+Tile LandTop 8 4
+Tile LandTopRight 9 4
+
+Tile LandLeft 0 3
+Tile LandCentre 1 3
+Tile LandCentre 2 3
+Tile LandCentre 3 3
+Tile LandCentre 4 3
+Tile LandCentre 5 3
+Tile LandCentre 6 3
+Tile LandCentre 7 3
+Tile LandCentre 8 3
+Tile LandRight 9 3
+
+Tile BlockBlue 14 3
+Tile BlockBlue 22 3
+
+Tile LandTopLeft 14 2
+Tile LandTop 15 2
+Tile LandTop 16 2
+Tile LandTop 17 2
+Tile LandTop 18 2
+Tile LandTop 19 2
+Tile LandTop 20 2
+Tile LandTop 21 2
+Tile LandTopRight 22 2
+
+Enemy SlimeA 18 11 1.0 SlimeWalk -1
+
+Tile BlockRed 26 2
+Tile BlockRed 30 0
+Tile BlockRed 34 2
+
+Tile BlockGreen 38 5
+Tile BlockGreen 58 5
+
+
+Tile LandTopLeft 38 4
+Tile LandTop 39 4
+Tile LandTop 40 4
+Tile LandTop 41 4
+Tile LandTop 42 4
+Tile LandTop 43 4
+Tile LandTop 44 4
+Tile LandTop 45 4
+Tile LandTop 46 4
+Tile LandTop 47 4
+Tile LandTop 48 4
+Tile LandTop 49 4
+Tile LandTop 50 4
+Tile LandTop 51 4
+Tile LandTop 52 4
+Tile LandTop 53 4
+Tile LandTop 54 4
+Tile LandTop 55 4
+Tile LandTop 56 4
+Tile LandTop 57 4
+Tile LandTopRight 58 4
+
+
+Enemy LadyBugA 43 13 1.0 LadyBugWalk -1
+Enemy MouseA 52 13 1.5 MouseWalk -1
+
+
+Tile BlockGreen 48 8
+
+
+Tile BlockRed 63 5
+Tile BlockRed 74 5
+
+
+Tile LandTopLeft 63 4
+Tile LandTop 64 4
+Tile LandTop 65 4
+Tile LandTop 66 4
+Tile LandTop 67 4
+Tile LandTop 68 4
+Tile LandTop 69 4
+Tile LandTop 70 4
+Tile LandTop 71 4
+Tile LandTop 72 4
+Tile LandTop 73 4
+Tile LandTopRight 74 4
+
+
+Enemy SlimeFireA 65 13 1.0 SlimeFireWalk -1
+
+
+Enemy BeeIdle1 70 10 1.0 BeeIdle -1
+
+Tile BlockBlue 80 9
+
+// High Platform
+Tile LandTopLeft 80 0
+Tile LandTop 81 0
+Tile LandTop 82 0
+Tile LandTop 83 0
+Tile LandTop 84 0
+Tile LandTop 85 0
+Tile LandTop 86 0
+Tile LandTop 87 0
+Tile LandTop 88 0
+Tile LandTop 89 0
+Tile LandTop 90 0
+Tile LandTopRight 91 0
+
+
+Enemy BlockIdle 87 9 0.0 BlockIdle -1

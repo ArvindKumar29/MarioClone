@@ -17,11 +17,13 @@ class ScenePlay :
     void init(std::string levelName);
     sf::View view;
     float levelTotalWidth, levelTotalHeight;
+    Vec2 endMark;
 
 public:
     
     void update();
     ScenePlay(GameMode* gameMode,std::string levelName);
+	void advanceToNextLevel();
     void sAnimation();
     Vec2 gridToPixel(float gx, float gy, Entity* entity);
     void sMovement();

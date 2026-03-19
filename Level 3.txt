@@ -1,0 +1,138 @@
+Window 120 30
+
+End Exit 111 6
+
+Player PlayerIdle 2 8
+
+Tile LandTopLeft 0 5
+Tile LandTop 1 5
+Tile LandTop 2 5
+Tile LandTop 3 5
+Tile LandTop 4 5
+Tile LandTop 5 5
+Tile LandTop 6 5
+Tile LandTop 7 5
+Tile LandTopRight 8 5
+
+Tile LandLeft 0 4
+Tile LandCentre 1 4
+Tile LandCentre 2 4
+Tile LandCentre 3 4
+Tile LandCentre 4 4
+Tile LandCentre 5 4
+Tile LandCentre 6 4
+Tile LandCentre 7 4
+Tile LandRight 8 4
+
+Tile BlockRed 12 0
+Tile BlockRed 24 0
+
+Tile LandTopLeft 12 -1
+Tile LandTop 13 -1
+Tile LandTop 14 -1
+Tile LandTop 15 -1
+Tile LandTop 16 -1
+Tile LandTop 17 -1
+Tile LandTop 18 -1
+Tile LandTop 19 -1
+Tile LandTop 20 -1
+Tile LandTop 21 -1
+Tile LandTop 22 -1
+Tile LandTop 23 -1
+Tile LandTopRight 24 -1
+
+Enemy SlimeFireA 18 0 -2.0 SlimeFireWalk 1
+
+Tile BlockBlue 28 -9
+Tile BlockBlue 56 -9
+
+Tile LandTopLeft 28 -10
+Tile LandTop 29 -10
+Tile LandTop 30 -10
+Tile LandTop 31 -10
+Tile LandTop 32 -10
+Tile LandTop 33 -10
+Tile LandTop 34 -10
+Tile LandTop 35 -10
+Tile LandTop 36 -10
+Tile LandTop 37 -10
+Tile LandTop 38 -10
+Tile LandTop 39 -10
+Tile LandTop 40 -10
+Tile LandTop 41 -10
+Tile LandTop 42 -10
+Tile LandTop 43 -10
+Tile LandTop 44 -10
+Tile LandTop 45 -10
+Tile LandTop 46 -10
+Tile LandTop 47 -10
+Tile LandTop 48 -10
+Tile LandTop 49 -10
+Tile LandTop 50 -10
+Tile LandTop 51 -10
+Tile LandTop 52 -10
+Tile LandTop 53 -10
+Tile LandTop 54 -10
+Tile LandTop 55 -10
+Tile LandTopRight 56 -10
+
+Enemy WormRingA 35 -9 -3.0 WormRingMove 1
+Enemy LadyBugA 48 -9 -1.0 LadyBugWalk 1
+
+Enemy BeeIdle1 35 -3 -5.0 BeeIdle 0
+Enemy BeeIdle1 48 -3 -3.0 BeeIdle 0
+
+Tile GrassCloud 60 -7
+
+Tile GrassCloud 25 -3
+Tile GrassCloud 45 -3
+
+Tile BlockGreen 64 -4
+Enemy BarnAcleIdle1 64 -3 0.0 BarnAcleAttack 1
+
+Tile GrassCloud 68 -1
+Tile BlockGreen 72 2
+
+Tile BlockGreen 76 5
+Tile BlockGreen 96 5
+
+Tile LandTopLeft 76 4
+Tile LandTop 77 4
+Tile LandTop 78 4
+Tile LandTop 79 4
+Tile LandTop 80 4
+Tile LandTop 81 4
+Tile LandTop 82 4
+Tile LandTop 83 4
+Tile LandTop 84 4
+Tile LandTop 85 4
+Tile LandTop 86 4
+Tile LandTop 87 4
+Tile LandTop 88 4
+Tile LandTop 89 4
+Tile LandTop 90 4
+Tile LandTop 91 4
+Tile LandTop 92 4
+Tile LandTop 93 4
+Tile LandTop 94 4
+Tile LandTop 95 4
+Tile LandTopRight 96 4
+
+Enemy MouseA 82 5 -1.5 MouseWalk -1
+Enemy MouseA 90 5 -1.5 MouseWalk 1
+
+Tile BlockBlue 102 5
+Tile BlockBlue 111 5
+
+Tile LandTopLeft 102 4
+Tile LandTop 103 4
+Tile LandTop 104 4
+Tile LandTop 105 4
+Tile LandTop 106 4
+Tile LandTop 107 4
+Tile LandTop 108 4
+Tile LandTop 109 4
+Tile LandTop 110 4
+Tile LandTopRight 111 4
+
+Enemy FrogIdle 108 6 -1.0 FrogRun 1

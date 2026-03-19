@@ -38,11 +38,15 @@ Texture BackgroundDirtSolid Assets\Sprites\Backgrounds\Default\background_solid_
 Texture BackgroundSkySolid Assets\Sprites\Backgrounds\Default\background_solid_sky.png
 Texture BackgroundGrassSolid Assets\Sprites\Backgrounds\Default\background_solid_grass.png
 Texture BackgroundSandSolid Assets\Sprites\Backgrounds\Default\background_solid_sand.png
+Texture Rope Assets\Sprites\Tiles\Default\rope.png
+Texture FlagYellow Assets\Sprites\Tiles\Default\flag_yellow_a.png
+Texture KeyYellow Assets\Sprites\Tiles\Default\hud_key_yellow.png
+Texture Exit Assets\Sprites\Tiles\Default\sign_exit.png
 
 
 // EnemiesTextures
-Texture EnemyFrogIdle Assets\Sprites\Enemies\Default\frog_idle.png
-Texture EnemyFrogRun Assets\Sprites\Enemies\Default\frog_jump.png
+Texture FrogIdle Assets\Sprites\Enemies\Default\frog_idle.png
+Texture FrogRun Assets\Sprites\Enemies\Default\frog_jump.png
 Texture BarnAcleIdle1 Assets\Sprites\Enemies\Default\barnacle_attack_a.png
 Texture BarnAcleIdle2 Assets\Sprites\Enemies\Default\barnacle_attack_b.png
 Texture BeeIdle1 Assets\Sprites\Enemies\Default\bee_a.png
@@ -88,6 +92,7 @@ Animation SlimeWalk 2 SlimeA SlimeB 10 1
 Animation SlimeFireWalk 2 SlimeFireA SlimeFireB 10 1
 Animation WormMove 2 WormA WormB 10 1
 Animation WormRingMove 2 WormRingA WormRingB 10 1
+Animation FrogRun 2 FrogIdle FrogRun 10 1
 
 
 

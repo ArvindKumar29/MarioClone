@@ -45,9 +45,21 @@ void ScenePlay::init(std::string levelName){
 			dec->addComponent<cSprite>().image.setTexture(game->getAssets().getTexture(texName));
 			dec->addComponent<cTransform>(gridToPixel(gx, gy, dec), Vec2(0.0f, 0.0f), Vec2(1.0f, 1.0f), 0.0f);
 		}
+		else if (type == "End") {
+			fin >> texName >> gx >> gy;
+			auto dec = m_entityManager->addEntity("End");
+			dec->addComponent<cSprite>().image.setTexture(game->getAssets().getTexture(texName));
+			dec->getComponent<cSprite>().image.setOrigin(dec->getComponent<cSprite>().image.getLocalBounds().width / 2, dec->getComponent<cSprite>().image.getLocalBounds().height / 2);
+			endMark = gridToPixel(gx, gy, dec);
+			std::cout << "End Mark at: " << endMark.x << ", " << endMark.y << "\n";
+			dec->addComponent<cTransform>(endMark, Vec2(0.0f, 0.0f), Vec2(1.0f, 1.0f), 0.0f);
+			dec->addComponent<cBoundingBox>(dec->getComponent<cSprite>().image.getGlobalBounds().width, dec->getComponent<cSprite>().image.getGlobalBounds().height);
+		}
+
 		else if (type == "Player") {
 			fin >> texName >> gx >> gy;
 			sSpawnPlayer(texName, gx, gy);
+			std::cout << "Player Spawned at: " << m_player->getComponent<cTransform>().pos.x << ", " << m_player->getComponent<cTransform>().pos.y << "\n";
 		}
 		else if (type == "Enemy") {
 			fin >> texName >> gx >> gy >> v >> animName >> hg;
@@ -163,7 +175,7 @@ void ScenePlay::update() {
 }
 
 void ScenePlay::sRender() {
-	game->window().clear(sf::Color(100, 250, 255));
+	game->window().clear(sf::Color(10, 50, 53));
 
 	auto camX = std::max(m_player->getComponent<cTransform>().pos.x, 1920.0f / 2);
 	auto camY = std::max(m_player->getComponent<cTransform>().pos.y, 1080.0f / 2);
@@ -365,17 +377,27 @@ void ScenePlay::sCollision() {
 						if (e->getComponent<cTransform>().prevPos.x < other->getComponent<cTransform>().prevPos.x) {
 							e->getComponent<cTransform>().pos.x -= overlap.x;
 							e->getComponent<cTransform>().vel.x *= -1;
-							e->getComponent<cSprite>().image.setScale(-1.0f, 1.0f);
+							e->getComponent<cSprite>().image.setScale(-1 * e->getComponent<cSprite>().image.getScale().x, 1.0f);
 						}
 						// Player is to the right
 						else {
 							e->getComponent<cTransform>().pos.x += overlap.x;
 							e->getComponent<cTransform>().vel.x *= -1;
-							e->getComponent<cSprite>().image.setScale(-1.0f, 1.0f);
+							e->getComponent<cSprite>().image.setScale(-1 * e->getComponent<cSprite>().image.getScale().x, 1.0f);
 						}
 					}
 				}
 			}
+		}
+	}
+	for (auto e : m_entityManager->getEntities("End")) {
+		Vec2 overlap = Physics::getOverlap(m_player, e);
+		Vec2 prevoverlap = Physics::getPrevOverlap(m_player, e);
+
+		if (overlap.x >= 0 && overlap.y >= 0) {
+			m_player->destroy();
+			game->window().setView(game->window().getDefaultView());
+			advanceToNextLevel();
 		}
 	}
 }
@@ -405,5 +427,23 @@ void ScenePlay::sAnimation() {
 			auto frameCount = anim.update(cAnim.name, cAnim.currentFrame, e);
 			cAnim.currentFrame = frameCount;
 		}
+	}
+}
+
+void ScenePlay::advanceToNextLevel() {
+	//std::cout << "Advancing to next level...\n";
+	auto currentLevel = game->m_currentScene;
+	if (currentLevel == "Level 1") {
+		ScenePlay* nextLevel = new ScenePlay(game, "Level 2");
+		game->changeScene("Level 2", nextLevel);
+	}
+	else if (currentLevel == "Level 2") {
+		ScenePlay* nextLevel = new ScenePlay(game, "Level 3");
+		game->changeScene("Level 3", nextLevel);
+	}
+	else {
+		auto menu = new SceneMenu(game);
+		game->window().setView(game->window().getDefaultView());
+		game->changeScene("Menu", menu);
 	}
 }

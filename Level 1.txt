@@ -1,6 +1,8 @@
-Window 79 17
+Window 90 17
 
-Player PlayerIdle 1 7
+End Exit 83 8
+
+Player PlayerIdle 2 4
 
 Tile LandTop 0 4
 Tile LandTop 1 4
@@ -168,6 +170,13 @@ Tile GrassCloud 60 8
 Tile GrassCloud 63 9
 Tile GrassCloud 64 2
 
+Tile GrassCloud 65 3
+Tile GrassCloud 68 5
+Tile GrassCloud 70 2
+Tile GrassCloud 72 4
+Tile GrassCloud 75 6
+Tile GrassCloud 78 6
+
 Tile LandTopLeft 65 11
 Tile LandTop 66 11
 Tile LandTop 67 11
@@ -180,3 +189,11 @@ Tile LandTop 74 11
 Tile LandTop 75 11
 Tile LandTop 76 11
 Tile LandTopRight 77 11
+
+Tile LandTopLeft 80 7
+Tile LandTop 81 7
+Tile LandTop 82 7
+Tile LandTop 83 7
+Tile LandTop 84 7
+Tile LandTopRight 85 7
+

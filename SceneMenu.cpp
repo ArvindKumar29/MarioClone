@@ -10,7 +10,7 @@ SceneMenu::SceneMenu(GameMode* gameMode) : Scene(game){
 }
 
 void SceneMenu::init() {
-	menuStrings.push_back("SYSTEM PHAAD DENGE");
+	menuStrings.push_back("BYTE BROS");
 	menuStrings.push_back("Level 1");
 	menuStrings.push_back("Level 2");
 	menuStrings.push_back("Level 3");

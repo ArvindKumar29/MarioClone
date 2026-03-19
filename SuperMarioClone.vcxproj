@@ -169,6 +169,8 @@
   <ItemGroup>
     <Text Include="Assets.txt" />
     <Text Include="Level 1.txt" />
+    <Text Include="Level 2.txt" />
+    <Text Include="Level 3.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
